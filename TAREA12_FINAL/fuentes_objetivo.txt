@@ -1,0 +1,24 @@
+﻿Considere cuatro fuentes diferentes de datos: web, csv, json y BD No SQL, sobre el mismo tema que tomaron la tarea anterior.
+
+web: 
+
+csv: Chicago_Traffic_Tracker_Congestion_Estimates_by_Regions
+
+json: Red_Light_Camera_Violations(cantidad de violaciones/infracciones capatadas en camaras de semaforo LUZ ROJA)
+
+noSQL: map_red_light_camera(ubicacion por coordenadas de la camaras de seguridad en semaforos que han detectado infraccion en la CIUDAD DE CHICAGO)
+
+
+
+
+
+
+Integre los datos, transforme y finalmente visualice los resultados (visión 365). Apóyese de los elementos gráficos adecuados (material de sesión S13).
+
+Suba los siguientes elementos:
+
+1. Informe de trabajo (formal)
+
+2. Código fuente en Python
+
+La sustentación será directo al código fuente.
