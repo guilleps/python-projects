@@ -33,7 +33,10 @@ def projects(request):
 
 
 def tasks(request):
-    return render(request, 'tasks.html')
+    tasks = Task.objects.all()
+    return render(request, 'tasks.html', {
+        'tasks': tasks
+    })
 
 # def tasks(request, id):
 #     # tasks = Task.objects.get(id = id)
