@@ -4,17 +4,26 @@ from .models import Project, Task
 
 # Create your views here.
 def index(request):
-    return render(request, 'index.html')
+    title = 'Welcome to my Home Page'
+    return render(request, 'index.html', {
+        'title': title
+    })
 
 def hello(request, username, id):
     return HttpResponse('Hello %s y %i' % (username,id))
 
 def about(request):
-    return render(request, 'about.html')
+    username = 'guillermo'
+    return render(request, 'about.html', {
+        'username': username
+    })
 
 def projects(request):
-    projects = list(Project.objects.values())
-    return render(request, 'projects.html')
+    # projects = list(Project.objects.values())
+    projects = Project.objects.all()
+    return render(request, 'projects.html', {
+        'projects': projects
+    })
 
 # def projects(request):
 #     projects = list(Project.objects.values())
